@@ -1,0 +1,54 @@
+<div id="bgrnd-gradient">
+    <app-webapp-title></app-webapp-title>
+</div>
+<img id="backgrnd" src="../../assets/orderbg.jpg" alt="background Image" srcset="">
+<div class="container rounded profilecard w-75">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img (mouseover)="getCurrentUser()" class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold">| {{customer.firstName}} {{customer.lastName}} |</span><span class="text-white-50">{{customer.email}}</span><span> </span></div>
+        <div class="mt-0">
+            <div class="d-flex flex-column text-left ps-3">
+                <span class="text-white-60 pb-1" style="font-size: 13px;">Contact No: {{customer.mobileNumber}}</span><span> </span>
+                <span class="text-white-60 pb-1" style="font-size: 13px;">Primary Address: {{customer.address.addressLine}}</span><span> </span>
+                <span class="text-white-60 pb-1 text-center" style="border-width: 2px; color: whitesmoke; border-style: solid; margin-top: 10px; border-radius: 5px;">Wallet Balance: {{customer.wallet}}</span><span> </span>
+            </div>
+        </div>
+    </div>
+        <div class="col-md-5 card-right">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4 class="text-right">Profile Settings</h4>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6"><label class="labels">Name</label><input type="text" [(ngModel)]="customer.firstName" #name="ngModel" class="form-control" placeholder="First Name" value=""></div>
+                    <div class="col-md-6"><label class="labels">Surname</label><input type="text" [(ngModel)]="customer.lastName" #name="ngModel" class="form-control" value="" placeholder="Surname"></div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12"><label class="labels">Mobile Number</label><input type="text" [(ngModel)]="customer.mobileNumber" #name="ngModel" class="form-control" placeholder="Enter phone number" value=""></div>
+                    <div class="col-md-12"><label class="labels">Address Line 1</label><input type="text" [(ngModel)]="customer.address.addressLine" #name="ngModel" class="form-control" placeholder="Enter address line 1" value=""></div>
+                </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6"><label class="labels">Area/Town/City</label><input type="text" [(ngModel)]="customer.address.city" #name="ngModel" class="form-control" placeholder="Town/City" value=""></div>
+                        <div class="col-md-6"><label class="labels">Postcode</label><input type="text" [(ngModel)]="customer.address.pincode" #name="ngModel" class="form-control" value="" placeholder="Pincode"></div>
+                    </div>
+                
+                <div class="row mt-3">
+                    <div class="col-md-6"><label class="labels">State/Region</label><input type="text" [(ngModel)]="customer.address.state" #name="ngModel" class="form-control" value="" placeholder="State"></div>
+                    <div class="col-md-6"><label class="labels">Country</label><input type="text" [(ngModel)]="customer.address.country" #name="ngModel" class="form-control" placeholder="Country" value=""></div>
+                </div>
+                <div class="mt-5 text-center"><button class="btn btn-danger" type="button" (click)="updateUser()">Save Profile</button></div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center experience"><span>Wallet</span></div><br>
+                <div class="col-md-12 mb-0"><label class="labels">Add Amount</label><input [(ngModel)]="amount" #name="ngModel" type="text" class="form-control" placeholder="Enter the amount" value=""></div> <br>
+                <label class="labels ms-3" >Enter UPI ID</label>
+                <div class="input-group col-md-12 mt-0">
+                    <span class="input-group-text" id="basic-addon1"><i class="fab fa-amazon-pay"></i></span>
+                    <input type="text" class="form-control" placeholder="Enter your UPI ID " value=""></div>
+                <div class="mt-4 text-center"><button class="btn btn-warning" type="button" (click)="updateWallet()" >Procceed</button></div>
+            </div>
+        </div>
+    </div>
+</div>

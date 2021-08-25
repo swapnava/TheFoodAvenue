@@ -1,0 +1,59 @@
+<div class="body" >
+<app-webapp-title></app-webapp-title>
+<main>
+    <br>
+    <br>
+<h1>Restaurants</h1>
+<h6>Choose a category you would like to order from!</h6>
+<div class="cards" style="margin-left: 52%;">
+
+<div class="card-single c3">
+<h6 style="text-align:center;">Italian</h6>
+</div>
+
+<div class="card-single c4">
+<h6 style="text-align:center;">Chinese</h6>
+</div>
+
+<div class="card-single c5">
+<h6 style="text-align:center;">Indian</h6>
+</div>
+
+</div>
+
+<section>
+    <div>
+        <div class="row">
+            <div class="col-12" style="margin-top:3em;">
+                <h3 style="text-align:center;font-size:3em;color:#fff; margin-left: 30%; margin-bottom: 30px;">More than <span style="color:#df5e5e;">1000 </span> Restaurants to Explore</h3>
+            </div>
+            <div class="col-12">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+						
+                            <div class="row row1">
+							
+								<div class="col-md-4" *ngFor="let restaurant of restaurants">
+                                    <div class="card" (click)="showItems(restaurant.restaurantId, restaurant.restaurantName)" style="cursor: pointer;">
+									<h6 class="card-text" style="padding:0.5em;color:#000;"><span>{{restaurant.address.addressLine}}</span><span style="float:right;">Accepting Orders</span></h6>
+                                        <img style="width: 500px;" class="img-fluids" alt="100%x280" src="{{restaurant.img}}">
+                                        <div class="card-body">
+                                            <h4 class="card-title" style="font-size:20px;">{{restaurant.restaurantName}}</h4>
+                                            <br>
+                                            <p class="card-text" style="color:#222;"><span>Contact No: {{restaurant.contactNumber}}</span><span style="float:right;">5 <span style="color:rgb(255, 196, 0);" class="las la-star"></span> {{restaurant.itemList.length}} Items available</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+								</div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+</main>
+</div>

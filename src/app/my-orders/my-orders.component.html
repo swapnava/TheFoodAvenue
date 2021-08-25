@@ -1,0 +1,25 @@
+<div id="bgrnd-gradient">
+    <app-webapp-title></app-webapp-title>
+</div>
+<img id="backgrnd" src="../../assets/orderbg.jpg" alt="background Image" srcset="">
+<div class="heading">
+    <h2>My Orders</h2>
+</div>
+<div class="orderList">
+    <table style="max-width:80%">
+        <tr>
+            <td *ngFor="let order of orders" style="border-style: none;">
+                <div class="card customcard" >
+                    <img src="https://www.avacare.in/images/recipes/ambur-biryani.jpg" class="card-img-top" alt="Restaurant Image" style="padding-left: 20px;padding-right: 20px;padding-top: 10px;">
+                    <div class="card-body ">
+                      <h5 class="card-title">{{order.restaurantName}}</h5>
+                      <h6 class="card-text">Order ID: {{order.customerId}}{{order.orderId}}</h6>
+                      <p class="card-text ctext">Order Date: {{order.orderDate}}</p>
+                      <p class="card-text ctext">Status: {{order.orderStatus}}</p>
+                      <p class="card-text ctext">Rating: <ngb-rating [max]="5" [(rate)]="currentRate" style="color: rgb(255, 217, 0);"></ngb-rating></p>
+                      <p class="card-text ctext">Total: Rs. {{order.totalAmount}}</p>
+                    </div> 
+                </div>
+            </td>
+        </tr>
+    </table>

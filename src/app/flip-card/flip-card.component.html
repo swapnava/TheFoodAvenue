@@ -1,0 +1,97 @@
+<div class="container">
+    <div [ngClass]="toggleProperty ? 'flipped' : ''" class="card">
+      <div class="front" style="box-shadow: 2px 2px 2px 2px rgba(255, 184, 184, 0.212); background-color: rgba(255, 184, 184, 0.212);">
+        <ng-content select="login"></ng-content>
+        <div class="login" *ngIf="loginemailmessage == 'Email ID' && loginpasswordmessage == 'Password'">
+          <h4 style="margin-top: 50px">Login</h4>
+          <input id="LUsername" type="text" class="form-control" placeholder="{{ loginemailmessage }}" aria-label="Username"
+            aria-describedby="addon-wrapping" [(ngModel)]="loginCred.email" #name="ngModel" />
+          <input id="Lpassword" type="password" class="form-control" placeholder="{{ loginpasswordmessage }}"
+            aria-label="Username" aria-describedby="addon-wrapping" [(ngModel)]="loginCred.password" #name="ngModel" />
+          <button style="margin-top: 25px; margin-bottom: 20px" class="btn btn-danger" type="button"
+            (click)="authenticate()">
+            Log In
+          </button>
+          <p style="margin-top: 10px">Not a member?</p>
+        </div>
+        <div class="loginwarn" *ngIf="loginemailmessage != 'Email ID' || loginpasswordmessage != 'Password'">
+          <h4 style="margin-top: 50px">Login</h4>
+          <input id="LUsername" type="text" class="form-control" placeholder="{{ loginemailmessage }}" aria-label="Username"
+            aria-describedby="addon-wrapping" [(ngModel)]="loginCred.email" #name="ngModel" />
+          <input id="Lpassword" type="password" class="form-control" placeholder="{{ loginpasswordmessage }}"
+            aria-label="Username" aria-describedby="addon-wrapping" [(ngModel)]="loginCred.password" #name="ngModel" />
+          <button style="margin-top: 25px; margin-bottom: 20px" class="btn btn-danger" type="button"
+            (click)="authenticate()">
+            Log In
+          </button>
+          <p style="margin-top: 10px">Not a member?</p>
+        </div>
+        <div (click)="toggle()" style="color: #fffcb9; margin-top: -60px; cursor: pointer;">Register</div>
+      </div>
+      <div class="back" style="box-shadow: 2px 2px 2px 2px rgba(255, 184, 184, 0.212); background-color: rgba(255, 184, 184, 0.212);">
+        <ng-content select="signup"></ng-content>
+        <div class="register">
+          <div [ngClass]="registercheck" *ngIf="registercheck === 'reg'">
+            <h4 style="margin-top: 10px; margin-bottom: 15px">Register</h4>
+            <div class="input-group mb-3 reg" style="height: 25px;">
+            <input id="fname" type="text" class="form-control" placeholder="First Name" aria-label="First Name"
+              aria-describedby="addon-wrapping" [(ngModel)]="customer.fname" #name="ngModel" />
+            <input id="lname" type="text" class="form-control" placeholder="Last Name" aria-label="Last Name"
+              aria-describedby="addon-wrapping" [(ngModel)]="customer.lname" #name="ngModel"/>
+            </div>
+            <select class="form-select form-select-sm reg" aria-label=".form-select-sm example" [(ngModel)]="customer.gender" #name="ngModel">
+              <option unselected>Gender</option>
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+              <option value="3">Others</option>
+            </select>
+            <input id="mobile" type="text" class="form-control reg" placeholder="Mobile Number"
+              aria-label="Mobile Number" aria-describedby="addon-wrapping" [(ngModel)]="customer.mobile" #name="ngModel"/>
+            <input id="email" type="email" class="form-control reg" placeholder="Email-id" aria-label="Email-id"
+              aria-describedby="addon-wrapping" [(ngModel)]="customer.email" #name="ngModel"/>
+            <input id="password" type="password" class="form-control reg" placeholder="Password" aria-label="Password"
+              aria-describedby="addon-wrapping" [(ngModel)]="customer.password" #name="ngModel"/>
+              <input id="password" type="password" class="form-control reg"
+              placeholder="Confirm Password" aria-label="Password" aria-describedby="addon-wrapping" [(ngModel)]="customer.confirmPassword" #name="ngModel"/>
+            <button class="btn btn-danger" type="button" style="margin-top: 10px" (click)="signupvalidate()">
+              Sign Up
+            </button>
+            <p style="margin-top: 6px">Already a member?</p>
+          </div>
+        </div>
+        <div class="register" *ngIf="registercheck != 'reg'">
+          <div [ngClass]="registercheck">
+            <h4 style="margin-top: 10px; margin-bottom: 10px; color: white">
+              Register
+            </h4>
+            <div class="input-group mb-3 regwarning" style="height: 28px;">
+            <input id="fname" type="text" class="form-control regwarn" placeholder="Enter First name"
+              aria-label="First Name" aria-describedby="addon-wrapping" [(ngModel)]="customer.fname" #name="ngModel"/>
+            <input id="lname" type="text" class="form-control regwarn" placeholder="Enter Last name"
+              aria-label="Last Name" aria-describedby="addon-wrapping" [(ngModel)]="customer.lname" #name="ngModel"/>
+            </div>
+            <select class="form-select form-select-sm regwarning" aria-label=".form-select-sm example"
+              style="color: rgb(199, 0, 0); font-size: 12px" [(ngModel)]="customer.gender" #name="ngModel">
+              <option selected>Gender must be selected</option>
+              <option value="1" style="color: black">Male</option>
+              <option value="2" style="color: black">Female</option>
+              <option value="3" style="color: black">Others</option>
+            </select>
+            <input id="mobile" type="text" class="form-control regwarning" placeholder="Mobile Number cannot be empty"
+              aria-label="Mobile Number" aria-describedby="addon-wrapping" [(ngModel)]="customer.mobile" #name="ngModel"/>
+            <input id="email" type="email" class="form-control regwarning" placeholder="Email-id cannot be empty"
+              aria-label="Email-id" aria-describedby="addon-wrapping" [(ngModel)]="customer.email" #name="ngModel"/>
+            <input id="password" type="password" class="form-control regwarning" placeholder="{{passwordMessage}}"
+              aria-label="Password" aria-describedby="addon-wrapping" [(ngModel)]="customer.password" #name="ngModel"/>
+            <input id="password" type="password" class="form-control regwarning"
+              placeholder="" aria-label="Password" aria-describedby="addon-wrapping" [(ngModel)]="customer.confirmPassword" #name="ngModel"/>
+            <button class="btn btn-danger" type="button" style="margin-top: 10px" (click)="signupvalidate()">
+              Sign Up
+            </button>
+            <p style="margin-top: 4px; color: white">Already a member?</p>
+          </div>
+        </div>
+        <div (click)="toggle()" style="color: #fffcb9; margin-top: -25px; cursor: pointer;">Login</div>
+    </div>
+  </div>
+</div>

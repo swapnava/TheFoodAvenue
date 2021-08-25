@@ -1,0 +1,46 @@
+#bgrnd-gradient {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #130000a1; /* Black background with opacity */
+    z-index: -1; /* Specify a stack order in case you're using a different order for other elements */
+  }
+  #backgrnd {
+    position: fixed;
+    margin: 0px;
+    padding: 0%;
+    right: 0;
+    top: -10%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+  }
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: rgb(185, 0, 0); 
+}
+
+.labels {
+    font-size: 11px;
+    display: inline;
+}
+
+.profilecard{
+  margin-top: 75px;
+  background-color: #462a2a71;
+  color: whitesmoke;
+}
+
+.card-right{
+  border-style: solid;
+  border-top: 0px;
+  border-width: 0.05px;
+  border-bottom: 0px;
+  border-color: rgba(255, 255, 255, 0.185);
+}

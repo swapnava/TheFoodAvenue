@@ -1,0 +1,98 @@
+<div class="body" >
+    <app-webapp-title></app-webapp-title>
+    <div class="sidebar">
+    <div class="row">
+    <div class="col-md-12 cart">
+                <div class="title">
+                    <div class="row">
+                        <div class="col">
+                            <h4><b>Cart</b></h4>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row" *ngIf="count != 0">
+                        <div class="col">
+                            <h5>Total Items: {{count}}</h5>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="count != 0" class="row">
+                    <div class="row main align-items-center" *ngFor="let cartItems of cartItem | keyvalue;">
+                        <div class="col-2"><img class="img-fluid" src="https://pupswithchopsticks.com/wp-content/uploads/chilli-chicken-thumbnail.jpg"></div>
+                        <div class="col">
+                            <div class="row" style="font-weight:600">{{cartItems.key}}</div>
+                        </div>
+                        <div class="col"> <a style="cursor: pointer;" (click)="removeFromCart(cartItems.key!, itemCost.get(cartItems.key)!)">-</a><a class="border">{{cartItems.value}}</a><a style="cursor: pointer;" (click)="addToCart(cartItems.key!, itemCost.get(cartItems.key)!)">+</a> </div>
+                        <div class="col"><strong>&#x20B9; {{itemCost.get(cartItems.key)}} </strong><span class="close">&#10005;</span></div>
+                    </div>
+                </div>
+                <div *ngIf="count === 0">
+                    <div class="row main align-items-center">
+                        <div class="row" style="font-weight:600; font-size: 16px; margin-left: 25%;">Hurry! Add an item</div>
+                    </div>
+                </div>
+              <div class="summary" *ngIf="count != 0">
+                <div>
+                    <h4><b>Summary</b></h4>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col" style="padding-left:0;">Bill Amount</div>
+                    <div class="col text-right">&#x20B9; {{billAmount}}</div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col" style="padding-left:0;">GST (5 &#37;)</div>
+                    <div class="col text-right">{{gst}}</div>
+                </div>
+               <hr>
+                <div class="row">
+                    <div class="" style="font-size:1.2em;font-weight:600">TOTAL BILL AMOUNT</div>
+                    <div class="col text-right" style="font-size:1.2em;font-weight:600">&#x20B9; {{totalBill}}</div>
+                </div> 
+                <button class="btn" (click)="placeOrder()">Place Order</button>
+           </div>
+            </div>
+    </div>
+    
+    </div>
+    
+    <main>
+        <br>
+    <h1>{{restaurantName}}</h1>
+    <h6>Order now to get mouthwatery deals!</h6>
+    
+    <section>
+        <div>
+            <div class="row">
+                <div class="col-12" style="margin-top:3em;">
+                    <h3 style="text-align:center;font-size:3em;color:#fff; margin-left: 30%; margin-bottom: 20px;">Click on the items to <span style="color:#df5e5e;">Add to Your Cart</span> now!</h3>
+                </div>
+                
+                <div class="col-12">
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+    
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            
+                                <div class="row row1">
+                                
+                                    <div class="col-md-3" *ngFor="let item of Items">
+                                        <div class="card" (click)="addToCart(item.itemName, item.cost)">
+                                            <img class="img-fluids text-center" alt="100%x280" src="{{item.img}}">
+                                            <div class="card-body">
+                                                <h4 class="card-title" style="font-size:20px;">{{item.itemName}}</h4>
+                                                <h6 class="card-text" style="color:#222;"><span>&#x20B9; {{item.cost}}</span><span style="float:right;">5 <span style="color:rgb(255, 196, 0);" class="las la-star"></span>Available</span></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    </main>
+    </div>

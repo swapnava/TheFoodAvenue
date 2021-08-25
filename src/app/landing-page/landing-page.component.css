@@ -1,0 +1,926 @@
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/vc-extensions-bundle/css/admin_icon.css?ver=5.6.2';
+@import 'http://fooddy.ancorathemes.com/wp-includes/css/dist/block-library/style.min.css?ver=5.6.2';
+@import  'http://fooddy.ancorathemes.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/vendors-style.css?ver=4.0.0';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css?ver=4.0.0';
+@import  'http://fooddy.ancorathemes.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4';
+@import  'http://fooddy.ancorathemes.com/wp-content/plugins/essential-grid/public/assets/css/settings.css?ver=3.0.11';
+@import  'http://fooddy.ancorathemes.com/wp-content/plugins/essential-grid/public/assets/font/fontello/css/fontello.css?ver=3.0.11';
+@import  'http://fooddy.ancorathemes.com/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.4.2';
+
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/css/trx_addons.debug.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/api/js_composer/js_composer.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/api/the-events-calendar/the-events-calendar.css';
+@import  'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/api/woocommerce/woocommerce.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/editor/css/trx_addons.editor.css';
+@import  'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/shortcodes/shortcodes.css';
+@import  'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/css/font-icons/css/trx_addons_icons-embedded.css?ver=5.6.2';
+@import  'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/js/swiper/swiper.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/js/magnific/magnific-popup.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/css/trx_addons.front.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/css/trx_addons.hovers.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/css/trx_addons.animation.css?ver=5.6.2';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_demo-master/css/font-icons/css/trx_demo_icons.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_demo-master/css/font-icons/css/animation.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_demo-master/css/trx_demo_panels.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=5.0.0';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=5.0.0';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=5.0.0';
+
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/cpt/layouts/layouts.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/cpt/layouts/shortcodes/logo/logo.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/cpt/layouts/shortcodes/search/search.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/cpt/layouts/shortcodes/cart/cart.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/cpt/layouts/shortcodes/menu/menu.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/cpt/layouts/shortcodes/title/title.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/cpt/layouts/shortcodes/featured/featured.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/cpt/layouts/shortcodes/currency/currency.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/cpt/layouts/shortcodes/language/language.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/cpt/services/services.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/cpt/team/team.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/cpt/testimonials/testimonials.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/widgets/aboutme/aboutme.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/widgets/audio/audio.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/widgets/banner/banner.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/widgets/categories_list/categories_list.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/widgets/contacts/contacts.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/widgets/flickr/flickr.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/widgets/recent_news/recent_news.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/widgets/slider/slider.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/widgets/socials/socials.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/widgets/twitter/twitter.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/widgets/video/video.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/shortcodes/action/action.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/shortcodes/anchor/anchor.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/shortcodes/blogger/blogger.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/shortcodes/button/button.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/shortcodes/content/content.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/shortcodes/countdown/countdown.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/shortcodes/form/form.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/shortcodes/googlemap/googlemap.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/shortcodes/icons/icons.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/shortcodes/popup/popup.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/shortcodes/price/price.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/shortcodes/promo/promo.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/shortcodes/skills/skills.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/shortcodes/socials/socials.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/shortcodes/table/table.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/trx_addons/shortcodes/title/title.css';
+@import 'http://fooddy.ancorathemes.com/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.6.0';
+@import "https://fonts.googleapis.com/css?family=Roboto+Slab%3A400%2C700%7CDamion%3A400&#038;subset=latin%2Clatin-ext&#038;ver=5.6.2";
+@import 'http://fooddy.ancorathemes.com/wp-content/themes/fooddy/css/fontello/css/fontello-embedded.css?ver=5.6.2';
+@import 'http://fooddy.ancorathemes.com/wp-content/themes/fooddy/style.css';
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
+
+@media (min-width: 1025px){
+    .elementor-1889 .elementor-element.elementor-element-77c27fb:not(.elementor-motion-effects-element-type-background), .elementor-1889 .elementor-element.elementor-element-77c27fb > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+        background-attachment: scroll;
+    }
+    }
+    .elementor-1889 .elementor-element.elementor-element-77c27fb:not(.elementor-motion-effects-element-type-background), .elementor-1889 .elementor-element.elementor-element-77c27fb > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+        background-image: linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://thumbs.dreamstime.com/b/lunchboxes-different-meals-white-table-healthy-food-delivery-lunchboxes-different-meals-white-table-flat-lay-160387451.jpg);
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment:fixed;
+    }
+    
+    elementor-1889 .elementor-element.elementor-element-77c27fb {
+        transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        padding: 220px 0px 70px 0px;
+    }
+    .elementor-section .elementor-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+    }
+    @media (min-width: 768px){
+    .elementor-column.elementor-col-100, .elementor-column[data-col="100"] {
+        width: 100%;
+    }}
+    .elementor-column {
+        min-height: 1px;
+    }
+    .elementor-column, .elementor-column-wrap {
+        position: relative;
+       
+        display: flex;
+    }	
+    
+    .elementor:not(.elementor-bc-flex-widget) .elementor-widget-wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    
+    .elementor-widget-wrap {
+        position: relative;
+        width: 100%;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-line-pack: start;
+        align-content: flex-start;
+    }
+     
+    elementor-widget-wrap>.elementor-element {
+        width: 100%;
+    }
+    .elementor-widget {
+        position: relative;
+    }
+    
+    .elementor-element .elementor-widget-container {
+        -webkit-transition: background .3s,border .3s,-webkit-border-radius .3s,-webkit-box-shadow .3s;
+        transition: background .3s,border .3s,-webkit-border-radius .3s,-webkit-box-shadow .3s;
+        -o-transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+        transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+        transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,-webkit-border-radius .3s,-webkit-box-shadow .3s;
+    }
+    
+    @media (min-width: 992px) and (max-width: 1199px){
+    .res-hero-3.new-search {
+        height: 500px;
+    }
+    }
+    .res-hero-3.new-search {
+        position: relative;
+        padding: 0px 0;
+    }
+    .elementor *, .elementor :after, .elementor :before {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    @media (min-width: 992px) and (max-width: 1199px){
+    .res-hero-3 {
+        padding: 70px 0px;
+    }}
+    .res-hero-3 {
+        height: auto;
+        background-position: center center;
+        background-size: cover;
+    }
+    @media (min-width: 992px){
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 960px;
+        
+    }
+    
+    }
+     
+    @media (min-width: 992px){
+    .col-lg-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    }
+    
+     
+     @media (min-width: 992px) and (max-width: 1199px){
+    .res-hero-3.new-search .res-hero-content {
+        padding-top: 30px;
+    }
+    }
+    .res-hero-3 .res-hero-content {
+        margin-top: 0px;
+    }
+    
+    .res-hero-main .res-hero-tite span {
+        font-weight: 600;
+    }
+    
+    .res-hero-main .res-hero-tite span, .heading-minimal .sub-title, .sub-title {
+        font-family: Montserrat;
+    }
+    .res-sidebar-container .res-sidebar .res-sidebar-box .res-sidebar-style span, .bottom-dots .dot.line-dot, .res-header-2 .right-space i, .res-header-2 .btn-secondary i, .heading-minimal .sub-title, .delicious .main-box .bottom-box .price-box .woocommerce-Price-amount, .blog-card .card-body .blog-category, .sub-title, .our-team .main-team-box:hover .text-box h3, .header-dark.sticky .right-space i, .res-hero-main .res-hero-tite span, .blog-sidebar .widget ul li a:hover, .footer-area .social-links-two a:hover, .footer-content .links-widget li a:hover, .footer-content .news-widget .news-post a:hover {
+        color: #FFCC00 !important;
+    }
+    .res-hero-main .res-hero-tite span {
+        color: #FFCC00;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .res-hero-3 .res-hero-main .res-hero-tite span img {
+        margin-bottom: 15px;
+    }
+    
+    .elementor img {
+        height: auto;
+        max-width: 100%;
+        border: none;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .elementor *, .elementor :after, .elementor :before {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    img, svg {
+        vertical-align: middle;
+    }
+    
+    .res-hero-3.new-search .res-hero-srch {
+        width: 100%;
+        border: none;
+    }
+    .res-hero-3.new-search .res-hero-srch {
+        border-radius: 0px;
+        position: relative;
+    }
+    @media (min-width: 992px) and (max-width: 1199px){
+    .res-hero-3 .res-hero-srch {
+        width: 100%;
+    }
+    }
+    .res-hero-3 .res-hero-srch {
+        width: 95.7%;
+        background-color: #ffffff;
+        padding: 10px 15px;
+    }
+    .res-hero-3 .res-hero-srch {
+        border-radius: 8px;
+    }
+    .elementor *, .elementor :after, .elementor :before {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .res-hero-srch {
+        border: 1px solid #e9e9e9;
+        display: block;
+        float: left;
+        width: 90%;
+    }
+    .res-hero-3.new-search .res-hero-srch form {
+        float: left;
+        display: block;
+        width: 100%;
+    }
+    .res-hero-3.new-search .res-hero-srch .ul-search-3 {
+        float: left;
+        display: block;
+        width: 100%;
+    }
+    .res-hero-srch .ul-search-3 .location-search {
+        background-color: #fff;
+    }
+    .res-hero-3.new-search .res-hero-srch .ul-search-3 .location-search {
+        float: left;
+        display: block;
+        width: 100%;
+    }
+    .res-hero-3.new-search .random-search {
+        position: relative;
+    }
+    .res-hero-3.new-search .res-hero-content .res-hero-srch .ul-search-3 .location-search label {
+        font-size: 18px;
+        float: left;
+        width: 100%;
+        color: #231900;
+        font-weight: 600;
+    }
+    label {
+        display: inline-block;
+    }
+    .res-hero-3.new-search .res-hero-content .res-hero-srch .ul-search-3 .location-search .recipe-search2 {
+        width: 100%;
+        float: left;
+        border: none;
+        background-color: transparent;
+        font-size: 14px;
+        color: #757575;
+        width: 100%;
+        position: relative;
+        padding: 0;
+    }
+    .res-hero-3.new-search .res-hero-content .res-hero-srch .ul-search-3 .location-search .recipe-search2:focus{
+    border:none !important;
+    outline:none;
+    }
+    .elementor *, .elementor :after, .elementor :before {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .form-control {
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+    
+    button, input, optgroup, select, textarea {
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+    }
+    *, ::after, ::before {
+        box-sizing: border-box;
+    }
+    user agent stylesheet
+    input {
+        -webkit-writing-mode: horizontal-tb !important;
+        text-rendering: auto;
+        writing-mode: horizontal-tb;
+        color: -internal-light-dark(black, white);
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: start;
+        appearance: auto;
+        background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+        -webkit-rtl-ordering: logical;
+        cursor: text;
+        
+        font: 400 13.3333px Arial;
+       
+    }
+    
+    .btn-theme, .post-excerpt .wp-block-button .wp-block-button__link, .post-excerpt .wp-block-search__button, .post-excerpt .wp-block-file .wp-block-file__button, .post-password-form input[type='submit'], .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .cf-off-canvas #main-order, .scroll-top, form .btn-search, .res-ct-content i, .res-pric-lg, .select2-container--default .select2-results__option--highlighted[aria-selected], .foodota-shop-detail .select2-container--default .select2-results__option--highlighted[data-selected], .realestate-search-blog .input-group .input-group-append .blog-search-btn, .res-sidebar-box3 .pretty.p-switch.p-fill input:checked ~ .state::before, .res-top3-main .btn-secondary, .res-header-3 .sb-menu ul li.color-x a.btn-theme, .res-hero-3.new-search .res-hero-content .res-hero-srch .ul-search-3 .location-search button.submit-btn, .res-pric-lg p, .res-pric-lg p span, .page-item.active .page-link {
+        background-color: #FFCC00;
+        color: #231900;
+        border-color: #FFCC00;
+    }
+    .res-hero-3.new-search .res-hero-content .res-hero-srch .ul-search-3 .location-search button.submit-btn {
+        top: 0px;
+        right: -5px;
+        left: auto;
+        position: absolute;
+        border-radius: 0px;
+        font-size: 18px;
+        padding: 11px 20px;
+        color: #231900;
+    }
+    .res-hero-3 .res-hero-content .res-hero-srch .ul-search-3 .location-search button.submit-btn {
+        top: 7px;
+        right: 7px;
+        border-radius: 4px;
+    }
+    [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+        cursor: pointer;
+    }
+    .elementor *, .elementor :after, .elementor :before {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .btn-theme {
+        box-shadow: none;
+        border: none;
+        text-shadow: none;
+        background: #FFCC00;
+        color: #231900;
+        border-radius: 0;
+        padding: 13px 25px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        -webkit-transition: all 0.4s ease-in-out 0.1s;
+        -moz-transition: all 0.4s ease-in-out 0.1s;
+        -o-transition: all 0.4s ease-in-out 0.1s;
+        transition: all 0.4s ease-in-out 0.1s;
+        position: relative;
+        text-transform: capitalize;
+    }
+    
+    .fa {
+        display: inline-block;
+        
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .fa-search:before {
+        content: "\f002";
+    }
+    
+    .res-hero-product {
+        margin-top: 30px;
+        display: block;
+        float: left;
+    }
+    .res-hero-product h3 {
+        font-size: 22px;
+        color: #ffffff;
+        margin-bottom: 23px;
+        font-weight: 600;
+    }
+    
+    p{
+    color:#7f7f7f;
+    }
+    .res-hero-product .fr-hero-logo {
+        float: left;
+        margin-right: 15px;
+    }
+    .res-hero-3.new-search .res-hero-product .fr-hero-logo a {
+        width: 78px;
+        display:inline-block;
+        height: 78px;
+        margin-right: 10px;
+    }
+    .row, .columns_wrap{
+    margin-right:0;}
+    .container{
+    padding-top:25px;}
+    
+    .card{
+    border-radius:3rem;
+    }
+    .card img{
+    border-radius:3rem 3rem 0 0;
+    height:200px;
+    
+    }
+    .card:hover{
+    
+    z-index:9999;
+    
+    
+    }
+    .card img:hover,.card-title:hover
+    {
+    cursor:pointer;
+    }
+    .card-title {
+        margin-bottom: .75rem;
+           color: #465058;
+        text-align: center;
+    }
+    
+    .card-text:last-child {
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    .sc_icons {
+        position: relative;
+        padding-top: .1px;
+    }
+    
+    .sc_align_center {
+        text-align: center;
+    }
+    
+    h2.sc_item_title.sc_item_title_style_default:not(.sc_item_title_tag) {
+        font-size: 3.571rem;
+    }
+    
+    .scheme_default h1, .scheme_default h2, .scheme_default h3, .scheme_default h4, .scheme_default h5, .scheme_default h6, .scheme_default h1 a, .scheme_default h2 a, .scheme_default h3 a, .scheme_default h4 a, .scheme_default h5 a, .scheme_default h6 a {
+        color: #414549;
+    }
+    .sc_item_title {
+        letter-spacing: 0;
+        line-height: 1.2em;
+    }
+    
+    .sc_item_title+.sc_item_subtitle {
+        margin-top: .7em;
+    }
+    
+    .scheme_default .sc_item_subtitle {
+        color: #9a9a9a;
+    }
+    
+    .sc_icons .sc_item_subtitle+.sc_item_columns {
+        margin-top: 5.1em;
+    }
+    
+    .sc_icons_default .sc_icons_columns {
+        counter-reset: nums;
+    }
+    
+    
+    .sc_icons.sc_align_center .sc_icons_item {
+        text-align: center;
+    }
+    
+    .sc_icons .sc_icons_item {
+        position: relative;
+    }
+    
+    .scheme_default .sc_icons .sc_icons_icon {
+        color: #465058;
+    }
+    .sc_icons .sc_icons_icon, .sc_icons .sc_icons_item_title {
+        -webkit-transition: all ease .3s;
+        -moz-transition: all ease .3s;
+        -ms-transition: all ease .3s;
+        -o-transition: all ease .3s;
+        transition: all ease .3s;
+    }
+    .sc_icons .sc_icons_icon {
+        color: #efa758;
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        width: auto;
+    }
+    .sc_icons .sc_icons_item>* {
+        margin: 0;
+    }
+    .sc_icons .sc_icons_icon>span {
+        display: inline-block;
+        opacity: 0;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: auto;
+    }
+    
+    .sc_icons_default .sc_icons_columns div[class*=trx_addons_column] .sc_icons_icon+.sc_icons_item_title {
+        position: relative;
+    }
+    
+    .sc_icons_default.sc_icons .sc_icons_icon+.sc_icons_item_title, .sc_icons .sc_icons_icon+.sc_icons_item_description {
+        margin-top: 2.5em;
+        padding-top: 2.95em;
+    }
+    @media (min-width: 960px) and (max-width: 1262px){
+    .sc_icons .sc_icons_icon+.sc_icons_item_title, .sc_icons .sc_icons_icon+.sc_icons_item_description {
+        margin-top: .1em;
+    }}
+    .scheme_default .sc_icons .sc_icons_item_title {
+        color: #414549;
+    }
+    .sc_icons_default .sc_icons_columns div[class*=trx_addons_column] .sc_icons_icon+.sc_icons_item_title:before {
+        content: counter(nums);
+        counter-increment: nums;
+        position: absolute;
+        top: -1rem;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        font-size: 1.429rem;
+        font-weight: 700;
+        width: 2.25em;
+        height: 2.25em;
+        line-height: 2.25em;
+        display:inline-block;
+        text-align: center;
+        border-radius: 50%;
+         color: #ffffff;
+        background-color: #ffbd2f;
+    }
+    
+    .sc_icons_default .sc_icons_columns div[class*="trx_addons_column"]:after,.sc_icons_default .sc_icons_columns div[class*="trx_addons_column"]:nth-child(2n+2):after {
+       
+        right: -23%;
+    }
+    @media (max-width: 766px){
+    .sc_icons_default .sc_icons_columns div[class*="trx_addons_column"]:after, .sc_icons_default .sc_icons_columns div[class*="trx_addons_column"]:nth-child(2n+2):after{
+    display:none;
+    }}
+    .sc_icons .sc_icons_item_title span, .sc_icons .sc_icons_item_description span {
+        display: inline-block;
+    }
+    
+    
+    .testimonials-clean {
+      color:#313437;
+      background-color:#eef4f7;
+      padding: 0 0 90px;
+      background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url(https://thumbs.dreamstime.com/b/people-eating-healthy-meals-wooden-table-top-view-food-delivery-people-eating-healthy-meals-wooden-table-food-delivery-160387494.jpg);
+        background-size: cover;
+        background-attachment:fixed;
+    }
+    
+    .testimonials-clean p {
+      color:#ccc;
+    }
+    
+    .testimonials-clean h2 {
+        font-weight: bold;
+        /* margin-bottom: 40px; */
+        padding-top: 40px;
+        color: #ccc;
+        font-size: 4rem;
+    }
+    @media (max-width:767px) {
+      .testimonials-clean h2 {
+        margin-bottom:25px;
+        padding-top:25px;
+        font-size:24px;
+      }
+    }
+    
+    .testimonials-clean .intro {
+      font-size:16px;
+      max-width:500px;
+      margin:0 auto;
+    }
+    
+    .testimonials-clean .intro p {
+      margin-bottom:0;
+    }
+    
+    .testimonials-clean .people {
+      padding:50px 0 20px;
+    }
+    
+    .testimonials-clean .item {
+      margin-bottom:32px;
+    }
+    
+    @media (min-width:768px) {
+      .testimonials-clean .item {
+        height:220px;
+      }
+    }
+    
+    .testimonials-clean .item .box {
+        padding: 30px;
+        color: red;
+        background-color: transparent;
+         background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+        border: 1px solid #fff;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;position: relative;
+    }
+    
+    .testimonials-clean .item .box:after {
+      content:'';
+      position:absolute;
+      left:30px;
+      bottom:-24px;
+      width:0;
+      height:0;
+      border:15px solid transparent;
+      border-width:12px 15px;
+      
+      border-top-color:#fff;
+    }
+    
+    .testimonials-clean .item .author {
+      margin-top:28px;
+      padding-left:25px;
+    }
+    
+    .testimonials-clean .item .name {
+      font-weight:bold;
+      margin-bottom:2px;
+      color:#fff;
+    }
+    
+    .testimonials-clean .item .title {
+      font-size:13px;
+      color:#fff;
+    }
+    
+    .testimonials-clean .item .description {
+      font-size:15px;
+      margin-bottom:0;
+       color:#fff;
+    }
+    
+    .testimonials-clean .item img {
+      max-width:40px;
+      float:left;
+      margin-right:12px;
+      margin-top:-5px;
+    }
+    
+    
+    
+    .newsletter {
+        padding: 80px 0;
+        background-image: url(https://theunpaidbills.in/wp-content/uploads/2021/07/call-to-action-v2.jpg);
+        background-size: cover;
+        background-position: 2% 75%;
+    }
+    
+     .newsletter .content {
+         max-width: 600px;
+         margin: 0 auto;
+         text-align: center;
+         position: relative;
+         z-index: 2
+     }
+    
+     .content-tuned {
+         font-size: 0.8rem;
+         margin-bottom: 34px !important;
+         color: #fff
+     }
+    
+     h2 {
+         color: #000;
+         margin-bottom: 6px
+     }
+    h1{
+    color:#ccc;
+    }
+     .form-control {
+         height: 50px;
+         border-color: #ffffff;
+         border-radius: 2px 0px 0px 2px
+     }
+    
+     .form-control:focus {
+         box-shadow: none !important;
+         border: 2px solid #243c4f;
+         border-color: none
+     }
+    
+     .btn {
+         min-height: 50px;
+         border-radius: 0;
+         background: #243c4f;
+         color: #fff;
+         font-weight: 300
+     }
+    
+     .btn:hover {
+         background: red;
+         color: #fff
+     }
+    
+     .form-control:focus {
+         color: #495057;
+         background-color: #fff;
+         border-color: #80bdff;
+         outline: 0;
+         box-shadow: 0 0 0 0rem rgba(0, 123, 255, .25) !important
+     }
+    
+     .unsubscribe-link {
+         text-decoration: none !important;
+         font-size: 13px;
+         color: #fff
+     }
+    
+     .unsubscribe-link:hover {
+         text-decoration: none !important;
+         color: #fff
+     }
+     
+     .c1{
+    margin: 20px 100px;
+    padding-top:0;
+     }
+     
+     
+     .b1{
+     border-radius:0 2rem 2rem 0;
+     }
+     .c0{
+     margin:0 5rem;
+     
+     }
+     .res-hero-3.new-search .res-hero-srch{
+     padding-top:4px;
+     padding-bottom:4px;
+     }
+     .input-group.has-validation>.dropdown-toggle:nth-last-child(n+4), .input-group.has-validation>:nth-last-child(n+3):not(.dropdown-toggle):not(.dropdown-menu), .input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu){
+     height:3.5rem;
+     }
+     
+     .row0{
+     width:1134px;
+     padding:90px 0;
+     }
+     
+    .scheme_default .sc_services_default .sc_services_item_featured_left, .scheme_default .sc_services_default .sc_services_item_featured_right, .scheme_default .sc_services_list .sc_services_item {
+        color: #9a9a9a;
+        background-color: transparent;
+    }
+    .sc_services_default .sc_services_item_featured_left .sc_services_item_info {
+        text-align: left;
+        padding: 0;
+        margin-left: 5em;
+    }
+    .sc_services_default .sc_services_item_featured_right .sc_services_item_info {
+        
+        margin-right: 5em;
+    }
+    
+    
+    .sc_services_default .sc_services_item_featured_left .sc_services_item_number, .sc_services_default .sc_services_item_featured_right .sc_services_item_number {
+        font-size: 1.429rem;
+        font-weight: 700;
+        width: 2.75em;
+        height: 2.75em;
+        line-height: 2.75em;
+        text-align: center;
+        background:#ffdbcbf2;
+        
+        border-radius: 50%;
+    }
+    
+    .scheme_default .sc_services .sc_services_item_number {
+        color: #414549;
+        background-color: #f2f2f2;
+    }
+    a{
+    text-decoration:none;
+        color:#df5e5e;}
+    .bb{
+        padding: 5.25rem;
+        
+    }
+    
+    .row{
+    margin:0;
+    }
+    .cr{
+    
+    margin:3em;}
+    
+    
+    .navbar {
+    margin-right: 0px;
+    overflow: hidden;
+    background-color: transparent;
+    display:block;
+    float:right;
+    z-index: 11;
+    }
+    
+    .navbar a{
+        margin-right: 0px;
+      float: right;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .dropdown {
+        margin-left: 20%;
+      float: left;
+      overflow: hidden;
+      border-radius: 2px;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .dropdown-content {
+      display: block;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #8d00003d;;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    .user-wrapper img{
+        border-radius:50%;
+        
+    }
+    .title{
+        position: relative;
+        left: 45%;
+        top: 1%;
+    }

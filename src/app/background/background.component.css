@@ -1,0 +1,66 @@
+h1 {
+    font-size: 400%;
+  }
+  
+  #backgrnd {
+    position: fixed;
+    margin: 0px;
+    padding: 0%;
+    right: 0;
+    top: -10%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  
+  #bgrnd-gradient {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #130000a1; /* Black background with opacity */
+    z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
+  }
+  
+  #welcome-tile {
+    position: absolute;
+    display: flexbox;
+    top: 25%;
+    left: 10%;
+  }
+  
+  #text1 {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: "Segoe UI", Tahoma, "Geneva", Verdana, sans-serif;
+    font-weight: 700;
+    color: #eeebdd;
+  }
+  #text2 {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: "Segoe UI", Tahoma, "Geneva", Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    color: #eeebdd;
+  }
+  .divider{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    background-color: rgba(255, 255, 255, 0.315);
+    width: 1px;
+    height: 450px;
+}
+.footer{
+  position: absolute;
+  bottom:5%;
+  left: 48%;
+  font-size: 11px;
+  font-family: monospace;
+  color: #eeebdd;
+}

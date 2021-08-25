@@ -1,0 +1,56 @@
+
+.theme-color {
+    color: #790000
+}
+
+.heading{
+    margin-left: 10%;
+    margin-top: 5%;
+    color: rgba(245, 245, 245, 0.9);
+}
+
+.customcard{
+    border-radius: 10px;
+    background-color: #ffaaaa31;
+    width: 18rem;
+    margin-right: 40px;
+    padding: 0px;
+    color: whitesmoke;
+}
+.ctext{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    margin: 5px;
+    padding: 0px;
+    color: whitesmoke;
+}
+
+.orderList{
+    position: relative;
+    width: 90%;
+    margin-left: 10%;
+    margin-top: 20px;
+    border-color: transparent;
+}
+#bgrnd-gradient {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #130000a1; /* Black background with opacity */
+    z-index: -1; /* Specify a stack order in case you're using a different order for other elements */
+  }
+  #backgrnd {
+    position: fixed;
+    margin: 0px;
+    padding: 0%;
+    right: 0;
+    top: -10%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+  }

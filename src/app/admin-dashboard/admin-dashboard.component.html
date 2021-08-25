@@ -1,0 +1,351 @@
+
+<div class="sidebar">
+    <div class="sidebar-menu">
+    <a href="#" class="active"><span class="las la-sign-out-alt"></span></a>
+    </div>
+    </div>
+    
+    <div class="main-content">
+    <header class="header">
+    <h2 style="padding: 7px 0 0 0;">
+    Dashboard
+    </h2>
+    
+    <div class="user-wrapper">
+    <img src="../../assets/profile.png" width="50px" height="50px" alt="">
+    <div>
+    <h3 class="head">Admin</h3>
+    <small><strong>Username:</strong> InternDevTeam</small>
+    </div>
+    </div>
+    
+    </header>
+    
+    <main>
+    <div class="cards">
+    
+    <div class="card-single c1">
+    <div>
+    <h1>100+</h1>
+    <span>Restaurants</span>
+    </div>
+    <div>
+    <span class="las la-utensils"></span>
+    </div>
+    </div>
+    
+    <div class="card-single c2">
+    <div>
+    <h1>5000+</h1>
+    <span>Happy Customers</span>
+    </div>
+    <div>
+    <span class="las la-users"></span>
+    </div>
+    </div>
+    
+    <div class="card-single c3">
+    <div>
+    <h1>5024</h1>
+    <span>Orders</span>
+    </div>
+    <div>
+    <span class="las la-shopping-cart"></span>
+    </div>
+    </div>
+    
+    <div class="card-single c4">
+    <div>
+    <h1>4212</h1>
+    <span>Reviews</span>
+    </div>
+    <div>
+    <span class="las la-comments"></span>
+    </div>
+    </div>
+    
+    <div class="card-single c5">
+    <div>
+    <h1>₹7.28L</h1>
+    <span>Total income</span>
+    </div>
+    <div>
+    <span class="las la-wallet"></span>
+    </div>
+    </div>
+    
+    <div class="card-single c6">
+    <div>
+    <h1>Daily</h1>
+    <span>Upgrade</span>
+    </div>
+    <div>
+    <span class="las la-chart-bar"></span>
+    </div>
+    </div>
+    
+    </div>
+    
+    <div class="rec1">
+        <div class="projects p1">
+        <div class="card card2">
+        <div class="card-header">
+        <h3>Customer Details</h3>
+        </div>
+        
+        <div class="card-body">
+        <div class="table-responsive">
+        <table width="100%">
+        
+        <thead>
+        
+        <tr>
+        <td>Customer ID</td>
+        <td>Name</td>
+        <td>Contact No</td>
+        <td>Address</td>
+        <td>Email ID</td>
+        <td>Wallet Balance</td>
+        </tr>
+        
+        </thead>
+        
+        <tbody>
+        
+        
+        <tr *ngFor="let customer of customers">
+        <td>{{customer.customerId}}</td>
+        <td>{{customer.firstName}} {{customer.lastName}}</td>
+        <td>{{customer.mobileNumber}}</td>
+        <td *ngIf="customer.address != null">{{customer.address.addressLine}}, {{customer.address.city}}-{{customer.address.pincode}}. {{customer.address.state}}</td>
+        <td *ngIf="customer.address == null">No Primary Address</td>
+        <td><strong>{{customer.email}}</strong></td>
+        <td *ngIf="customer.wallet != null">₹{{customer.wallet.balance}}</td>
+        <td *ngIf="customer.wallet == null">Unused Wallet</td>
+        </tr>
+        </tbody>
+        </table>
+        
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        </div>
+    
+    <div class="recent-grid rec">
+    <div class="projects p0">
+    <div class="card card1">
+    <div class="card-header">
+    <h3>Restaurants</h3>
+    
+    <button type="button" data-toggle="modal" data-target=".restaurantModal">Add Restaurant <span class="las la-edit"></span></button>
+    </div>
+    
+    <div class="card-body">
+    <div class="table-responsive">
+    <table width="100%">
+    
+    <thead>
+    
+    <tr>
+    <td></td>
+    <td>Restaurant Name</td>
+    <td>Location</td>
+    <td>Contact No.</td>
+    <td>Category</td>
+    <td>Manager Name</td>
+    <td colspan="2">Items</td>
+    
+    </tr>
+    
+    </thead>
+    
+    <tbody>
+    <tr *ngFor="let restaurant of restaurants">
+    <td><img class="rounded-circle" src="{{restaurant.img}}" alt="image" /></td>
+    <td>{{restaurant.restaurantName}}</td>
+    <td>{{restaurant.address.addressLine}}, {{restaurant.address.city}}-{{restaurant.address.pincode}}. {{restaurant.address.state}}</td>
+    <td>{{restaurant.contactNumber}}</td>
+    <td>{{restaurant.category}}</td>
+    <td>{{restaurant.managerName}}</td>
+    <td colspan="2"><span *ngFor="let items of restaurant.itemList"> {{items.itemName}}; </span></td>
+    <td><a (click)="deleteRestaurant(restaurant.restaurantId)"><span style="color: brown;" class="las la-trash-alt"></span></a></td>
+    </tr>
+    
+    
+    </tbody>
+    </table>
+    
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+    
+    
+    
+    <div class="recent-grid rec">
+    <div class="projects p0">
+    <div class="card card1">
+    <div class="card-header">
+    <h3>Recent Orders</h3>
+    </div>
+    
+    <div class="card-body">
+    <div class="table-responsive">
+    <table width="100%">
+    
+    <thead>
+    
+    <tr>
+    <td>Order ID</td>
+    <td>Customer ID</td>
+    <td>Items Ordered</td>
+    <td>Date of Order</td>
+    <td>Order Status</td>
+    <td>Restaurant Name</td>
+    <td>Total Amount</td>
+    </tr>
+    
+    </thead>
+    
+    <tbody>
+    <tr *ngFor="let order of orders">
+    <td>{{order.orderId}}</td>
+    <td>{{order.customerId}}</td>
+    <td><span *ngFor="let items of order.itemList">{{items}}; </span></td>
+    <td>{{order.orderDate}}</td>
+    <td>{{order.orderStatus}}</td>
+    <td>{{order.restaurantName}}</td>
+    <td>{{order.totalAmount}}</td>
+    </tr>
+    
+    </tbody>
+    </table>
+    
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+    
+    
+    <div class="rec1">
+    <div class="projects p1">
+    <div class="card card2">
+    <div class="card-header">
+    <h3>Items</h3>
+    <button type="button" data-toggle="modal" data-target=".itemModal">Add Item <span class="las la-edit"></span></button>
+    </div>
+    
+    <div class="card-body">
+    <div class="table-responsive">
+    <table width="100%">
+    <thead>
+    
+    <tr>
+    <td></td>
+    <td>Item Name</td>
+    <td>Category</td>
+    <td>Cost</td>
+    </tr>
+    
+    </thead>
+    
+    <tbody>
+    <tr *ngFor="let item of items">
+    <td><img class="rounded-circle" src="{{item.img}}" alt="image" /></td>
+    <td>{{item.itemName}}</td>
+    <td>{{item.category}}</td>
+    <td>{{item.cost}}</td>
+    <td><a style="cursor: pointer;" (click)="deleteItem(item.itemId)"><span style="color: brown;" class="las la-trash-alt"></span></a></td>
+    </tr>    
+    
+    </tbody>
+    </table>
+    
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+<div class="modal fade itemModal" id="modalstyle" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add Item</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <input [(ngModel)]="item.itemName" #name="ngModel" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Item Name">       
+            <input [(ngModel)]="item.category" #name="ngModel" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Category">
+            <input [(ngModel)]="item.quantity" #name="ngModel" type="number" class="form-control" id="exampleFormControlInput1" placeholder="Quantity">
+            <input [(ngModel)]="item.cost" #name="ngModel" type="number" class="form-control" id="exampleFormControlInput1" placeholder="Cost">
+            <input [(ngModel)]="item.img" #name="ngModel" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Image Url">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger" (click)="addItem()" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade restaurantModal" id="modalstyle" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add Item</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <input [(ngModel)]="restaurant.restaurantName" #name="ngModel" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Restaurant Name">       
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01">Category</label>
+                </div>
+                <select [(ngModel)]="restaurant.category" #name="ngModel" class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="Indian">Indian</option>
+                  <option value="Chinese">Chinese</option>
+                  <option value="Italian">Italian</option>
+                </select>
+              </div>
+              <input [(ngModel)]="restaurant.address.addressLine" #name="ngModel" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Address Line 1">       
+              <div class="row mt-3">
+                <div class="col-md-6"><label class="labels">Area/Town/City</label><input type="text" [(ngModel)]="restaurant.address.city" #name="ngModel" class="form-control" placeholder="Town/City" value=""></div>
+                <div class="col-md-6"><label class="labels">Postcode</label><input type="text" [(ngModel)]="restaurant.address.pincode" #name="ngModel" class="form-control" value="" placeholder="Pincode"></div>
+            </div>
+        
+        <div class="row mt-3">
+            <div class="col-md-6"><label class="labels">State/Region</label><input type="text" [(ngModel)]="restaurant.address.state" #name="ngModel" class="form-control" value="" placeholder="State"></div>
+            <div class="col-md-6"><label class="labels">Country</label><input type="text" [(ngModel)]="restaurant.address.country" #name="ngModel" class="form-control" placeholder="Country" value=""></div>
+        </div>
+            <label class="labels">Items</label>
+              <div style="margin-left: 10px;" *ngFor="let item of itemListRes; let i=index;" class="form-check">
+                <input class="form-check-input" type="checkbox" value="item" id="flexCheckDefault" (change)="changed()" [(ngModel)]="itemIndex[i].isSelected" #name="ngModel">
+                <label class="form-check-label" for="flexCheckDefault">
+                  {{item.itemName}}
+                </label>
+              </div>
+            <input [(ngModel)]="restaurant.managerName" #name="ngModel" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Manager Name">
+            <input [(ngModel)]="restaurant.contactNumber" #name="ngModel" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Contact Number">
+            <input [(ngModel)]="restaurant.img" #name="ngModel" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Image Url">
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger" (click)="addRestaurant()" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>

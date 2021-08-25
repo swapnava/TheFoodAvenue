@@ -1,0 +1,20 @@
+<h2 style="position: absolute; left: 44%; top: 1%;">Order Placed!</h2>
+<div class="order">
+<img style="height: 450px; margin-left: 15%;" src="../../assets/order-placed.gif" alt="" srcset="">
+</div>
+
+<div class="card summary text-center border-light mb-3" style="max-width: 18rem;">
+  <div class="card-header">Order Summary</div>
+  <div class="card-body">
+    <h5 class="card-title">Order ID: {{order.customerId}}{{order.orderId}}</h5>
+    <p class="card-text">Restaurant: {{order.restaurantName}}</p>
+    <p class="card-text">Status: {{order.orderStatus}}</p>
+    <div *ngFor="let item of order.itemList">
+      <p class="card-text">{{item}}</p>
+    </div>
+    <p style="font-weight:bold;">Total Amount: {{order.totalAmount}}</p>
+  </div>
+</div>
+<div class="text-center">
+  <p>Still Hungry? <a (click)="back()" style="cursor: pointer;">Click here to browse more</a></p>
+</div>
